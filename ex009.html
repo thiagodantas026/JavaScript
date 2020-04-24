@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nationality</title>
+</head>
+<body>
+    <h1>Nactionality</h1>
+    enter your nationality <input type="name" name="txtvel" id="txtvel"> is
+    <input type="button" value="verificar" onclick="nacionalidade()">
+    <div id="res">
+    <script>
+        var txtv = window.document.querySelector('input#txtvel')
+
+        function nacionalidade(){
+
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = (txtv.value)
+            res.innerHTML = `Your nacionality is <strong>${vel}</strong>`
+        
+             if (vel  == 'brazil'){
+                 res.innerHTML += `Your is Brazilion`
+             }else{
+                 res.innerHTML = `Your not is Brazilion, you is <strong>${vel}</stron>`
+             }
+        }
+    </script>
+</body>
+</html>
