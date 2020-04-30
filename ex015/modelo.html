@@ -12,11 +12,24 @@
          </header>
         <section>
             <div>
-                testando
+                <p>Year Of Birth:
+                <input type="number" name="txtano" id="txtano" min="0">
+                </p>
+                <p>Sex: <br>
+                    <input type="radio" name="radsex" id="masc"> <!--option the sex-->
+                    <label for="mas">Male</label><!--Man-->
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem"> Female </label>
+                </p>
+                <p>
+                    <input type="button" value="Check" onclick="verificar()">
+                </p>
             </div>
-                >
+            <div id="foto">
+                <img id="imagem" src="photo-children.png" alt="">
+            </div>
             <div id="res">
-
+                Fill in the data above to see the result!!!
             </div>
         </section>
         <footer>
